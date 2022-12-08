@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;}
+body{
+    background-color:  	#e6ebec;
+    min-height: 100%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 10;
+    overflow: scroll;
+}
+nav{
+    height: 60px;
+    background-color: #f6c11f;
+}
+ul{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    margin: 0;
+    padding: 0;
+}
+li{
+    color: white;
+    font-weight: 600;
+    list-style: none;
+    font-size: 18px;
+    padding-left: 15px;
+    display: inline-flex;
+}
+.title{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+    position: absolute;
+    top: 10px;
+    left:10px;
+}
+.title:hover{
+    font-size: 35px;
+    transition: font-size 0.1s linear;
+}
+.restaurants{
+    height: max-content;
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-auto-rows: auto;
+    align-content: space-between;
+    justify-content: center;
+}
+.rests{
+    color: black;
+    text-decoration: none;
+}
+.rests::after{
+    color: black;
+}
+.rest1, .rest2, .rest3, .rest4, .rest5, .rest6, .rest7, .rest8, .rest9{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 120px 210px 20px;
+    height: 400px;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.rests p{
+    overflow: scroll;
+}
+.rests img{
+    height: 210px;
+    width: auto;
+    margin: auto;
+    margin-top: 2px;
+}
+.rests span{
+    text-align: center;
+}
+.rest1:hover, .rest2:hover, .rest3:hover, .rest4:hover, .rest5:hover, .rest6:hover, .rest7:hover, .rest8:hover, .rest9:hover{
+    cursor: pointer;
+}
+footer{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: 36px;
+    color: white;
+    background-color: #f6c11f;
+    z-index: 1;
+}
+footer .email{
+    position: absolute;
+    right: 0px;
+}
+footer span{
+    margin: 10px;
+}

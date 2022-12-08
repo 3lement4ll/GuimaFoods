@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;}
+body{
+    background-color:  	#e6ebec;
+    min-height: 100%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 10;
+    overflow: scroll;
+}
+nav{
+    height: 60px;
+    background-color: #f6c11f;
+}
+ul{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    margin: 0;
+    padding: 0;
+}
+li{
+    color: white;
+    font-weight: 600;
+    list-style: none;
+    font-size: 18px;
+    padding-left: 15px;
+    display: inline-flex;
+}
+.title{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+    position: absolute;
+    top: 10px;
+    left:10px;
+}
+.title:hover{
+    font-size: 35px;
+    transition: font-size 0.1s linear;
+}
+.content{
+    display: grid;
+    grid-template-areas: "name name name name name name"
+                         "gallery gallery gallery description description description"
+                         "gallery gallery gallery description description description"
+                         "gallery gallery gallery rating gps gps"
+                         "contact contact contact contact gps gps";
+}
+.content h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    grid-area: name;
+    height: 15vw;
+    width: 100vw;
+}
+.imagem-principal{
+    grid-area: gallery;
+    height: 60vw;
+    width: calc(50vw - 5px);
+}
+.description{
+    grid-area: description;
+    height: 50vw;
+    width: 50vw;
+    padding-left: 5px;
+    overflow: scroll;
+}
+.gps{
+    grid-area: gps;
+    height: 33vw;
+    width: 41.5vw;
+}
+.rating{
+    display: flex;
+    grid-area: rating;
+    padding-left: 5px;
+    font-size: 50px;
+    align-items: flex-end;
+    padding-bottom: 0;
+}
+.contact{
+    display: flex;
+    grid-area: contact;
+    padding: 5px;
+    font-size: 30px;
+    height: 25vw;
+    align-items: flex-end;
+}
+footer{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: 36px;
+    color: white;
+    background-color: #f6c11f;
+    z-index: 1;
+}
+footer .email{
+    position: absolute;
+    right: 0px;
+}
+footer span{
+    margin: 10px;
+}
